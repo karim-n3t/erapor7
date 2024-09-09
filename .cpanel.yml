@@ -3,7 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ziyanetw/dataweb/erapor/
     - /bin/cp -R * $DEPLOYPATH
-    - /bin/cd $DEPLOYPATH
     - /opt/cpanel/composer/bin/composer install
     - /bin/php artisan key:generate
     - /bin/php artisan migrate
