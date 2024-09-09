@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/ziyanetw/dataweb/erapor/
+    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cd $DEPLOYPATH
+    - composer install
